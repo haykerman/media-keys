@@ -1,17 +1,20 @@
 const St = imports.gi.St;
 const Main = imports.ui.main;
+const GLib = imports.gi.GLib;
 const Util = imports.misc.util;
 
+const motePath = '/home/' + GLib.get_user_name() + '/.bin/mote'
+
 function _pause() {
-  Util.spawn(['xdotool', 'key', 'XF86AudioPlay']);
+  Util.spawn([motePath, 'pause']);
 }
 
 function _prev() {
-  Util.spawn(['xdotool', 'key', 'XF86AudioPrev']);
+  Util.spawn([motePath, 'prev']);
 }
 
 function _next() {
-  Util.spawn(['xdotool', 'key', 'XF86AudioNext']);
+  Util.spawn([motePath, 'next']);
 }
 
 function init() {

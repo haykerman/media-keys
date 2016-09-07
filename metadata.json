@@ -1,7 +1,7 @@
 {
   "url": "https://github.com/mafflin/media-keys",
-  "version": 1,
-  "description": "Adds media player keys to the panel. NEEDS xdotool!!!",
+  "version": 2,
+  "description": "Adds media player buttons to the panel. NEEDS xdotool!!! Mote branch",
   "settings-schema": "org.gnome.shell.extensions.media-keys",
   "uuid": "media-keys@mafflin",
   "name": "Media keys",
