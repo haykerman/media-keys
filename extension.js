@@ -3,18 +3,18 @@ const Main = imports.ui.main;
 const GLib = imports.gi.GLib;
 const Util = imports.misc.util;
 
-const motePath = '/home/' + GLib.get_user_name() + '/.bin/mote'
+const motePath = GLib.get_home_dir() + '/.bin/mote'
 
 function _pause() {
-  Util.spawn([motePath, 'pause']);
+  Util.spawn([motePath, 'pause', '-i']);
 }
 
 function _prev() {
-  Util.spawn([motePath, 'prev']);
+  Util.spawn([motePath, 'prev', '-i']);
 }
 
 function _next() {
-  Util.spawn([motePath, 'next']);
+  Util.spawn([motePath, 'next', '-i']);
 }
 
 function init() {
