@@ -25,15 +25,15 @@ let buttonPause = new St.Button({ style_class: 'panel-button'});
 let buttonNext = new St.Button({ style_class: 'panel-button'});
 
 function _pause() {
-  Util.spawn(['xdotool', 'key', 'XF86AudioPlay']);
+  Util.spawn([mote, 'pause', '-i']);
 }
 
 function _prev() {
-  Util.spawn(['xdotool', 'key', 'XF86AudioPrev']);
+  Util.spawn([mote, 'prev', '-i']);
 }
 
 function _next() {
-  Util.spawn(['xdotool', 'key', 'XF86AudioNext']);
+  Util.spawn([mote, 'prev', '-i']);
 }
 
 function init() {
