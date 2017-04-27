@@ -33,7 +33,7 @@ function _prev() {
 }
 
 function _next() {
-  Util.spawn([mote, 'prev', '-i']);
+  Util.spawn([mote, 'next', '-i']);
 }
 
 function init() {

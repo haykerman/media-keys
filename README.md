@@ -1,5 +1,7 @@
 # Media Keys
 
+MOTE branch!
+
 Gnome-shell extension that adds Media Player buttons to the panel.
 
 #### !!! NEEDS xdotool
@@ -11,7 +13,7 @@ Gnome-shell extension that adds Media Player buttons to the panel.
 
 ### Notes
 
-* Extension emulates buttons:
-  - XF86AudioPlay
-  - XF86AudioPrev
-  - XF86AudioNext
+* v.2 executes mote commands:
+  - pause
+  - prev
+  - next
